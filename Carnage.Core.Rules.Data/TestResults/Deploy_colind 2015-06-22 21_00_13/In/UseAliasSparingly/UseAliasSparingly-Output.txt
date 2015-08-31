@@ -1,0 +1,27 @@
+Problem description: Avoid the use of aliases unless the table is referenced multiple times. If aliases are to be used select a meaningful name and always specify the AS keyword
+FullID: Asos.Core.Data.Rules.AR1003
+Severity: Warning
+Model element: dbo.ProcContainingBadAlias
+Script file: ProcContainingAlias.sql
+Start line: 4
+Start column: 26
+========end of problem========
+
+Problem description: Avoid the use of aliases unless the table is referenced multiple times. If aliases are to be used select a meaningful name and always specify the AS keyword
+FullID: Asos.Core.Data.Rules.AR1003
+Severity: Warning
+Model element: dbo.ProcContainingOkAlias
+Script file: ProcContainingAlias.sql
+Start line: 14
+Start column: 13
+========end of problem========
+
+Problem description: Avoid the use of aliases unless the table is referenced multiple times. If aliases are to be used select a meaningful name and always specify the AS keyword
+FullID: Asos.Core.Data.Rules.AR1003
+Severity: Warning
+Model element: dbo.ProcContainingOkAlias
+Script file: ProcContainingAlias.sql
+Start line: 15
+Start column: 14
+========end of problem========
+

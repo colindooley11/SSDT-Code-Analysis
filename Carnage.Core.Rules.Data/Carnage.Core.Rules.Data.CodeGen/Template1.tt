@@ -1,0 +1,106 @@
+﻿<#@ template debug="true" hostSpecific="true" #>
+<#@ output extension=".cs" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ Assembly Name="System.Xml.dll" #>
+<#@ Assembly Name="System.Xml.Linq.dll" #>
+<#@ Assembly Name="System.Windows.Forms.dll" #>
+
+<#@ Assembly Name="$(SolutionDir)Asos.Core.Rules.Data.CodeGen\bin\debug\Asos.Core.Rules.Data.CodeGen.dll" #>
+
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #> 
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="Asos.Core.Rules.Data.CodeGen" #>
+
+
+
+
+    <#
+
+    var names = new List<string> { "one", "two"}; 
+
+
+    foreach(var name in GetFileNames())
+    {
+        #>
+
+namespace Asos.Core.Rules.Data.Rules
+{
+    using System.Collections.Generic;
+    using Asos.Core.Rules.Data.Attributes;
+    using Asos.Core.Rules.Data.Visitors;
+    using Microsoft.SqlServer.Dac.CodeAnalysis;
+    using Microsoft.SqlServer.Dac.Model;
+    using Microsoft.SqlServer.TransactSql.ScriptDom;
+
+
+
+
+    [LocalizedExportCodeAnalysisRule("RuleIdentities.<#= name#>",
+    Constants.ResourceBaseName,
+    ReturnStatementPresentRuleName,
+    ReturnStatementPresentProblemDescription,
+    Category = Constants.Design,
+    RuleScope = SqlRuleScope.Element)]
+    internal sealed class ReturnStatementPresentRule : AsosSqlCodeAnalysisRule
+    {
+        private const string ReturnStatementPresentProblemDescription = "ReturnStatementPresentRule_ProblemDescription";
+        private const string ReturnStatementPresentRuleName = "ReturnStatementPresentRule_RuleName";
+
+        protected override IList<SqlRuleProblem> ElicitProblems(TSqlFragment fragment, RuleDescriptor ruleDescriptor, string elementName, TSqlObject modelElement)
+        {
+            var visitor = new ();
+            fragment.Accept(visitor);
+            return this.CreateProblemsAsWarning(ruleDescriptor, elementName, modelElement, visitor.ReturnStatements);
+        }
+    }
+}
+
+<#
+    }
+#>
+
+
+<#+
+
+   List<string> GetFileNames()
+  {
+
+     var names = new List<string>();
+
+      var assembly = typeof(RuleIdentities).Assembly;
+      var type = assembly.GetType("Asos.Core.Rules.Data.CodeGen.RuleIdentities");   
+     
+
+      //var ruleNames = Type.GetType("Asos.Core.Rules.Data.CodeGen.RuleIdentities");
+            var members = type.GetMembers(BindingFlags.Public | BindingFlags.Static | BindingFlags.Default | BindingFlags.Instance);
+
+
+            foreach (var member in members)
+            {
+                if (member.MemberType == MemberTypes.Field)
+                {
+                     names.Add(member.Name);
+                     // create the rule
+                     // create the visitor 
+
+                }
+            }
+
+            return names;
+
+  }
+
+
+  
+#>
+
+
+
+
+

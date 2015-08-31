@@ -1,0 +1,73 @@
+﻿<#@ template debug="true" hostSpecific="true" #>
+<#@ output extension=".cs" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ Assembly Name="System.Xml.dll" #>
+<#@ Assembly Name="System.Xml.Linq.dll" #>
+<#@ Assembly Name="System.Windows.Forms.dll" #>
+
+
+<#@ Assembly Name="$(SolutionDir)Carnage.Core.Rules.Data\bin\debug\Carnage.Core.Rules.Data.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #> 
+<#@ import namespace="System.Reflection" #>
+<#@ import namespace="Carnage.Core.Rules.Data" #>
+<#
+    var names = new List<string> { "one", "two"}; 
+    foreach(var name in GetFileNames())
+    {
+        #>
+namespace Carnage.Core.Rules.Data.Visitors
+{
+    using System.Collections.Generic;
+    using Microsoft.SqlServer.TransactSql.ScriptDom;
+
+    internal class <#= name#>Visitor : TSqlFragmentVisitor
+    {
+        public <#= name#>Visitor()
+        {
+            this.ErroneousFragments = new List<TSqlFragment>();
+        }
+
+        public IList<TSqlFragment> ErroneousFragments { get; private set; }
+
+        /* REPLACE TsqlScript with the appropriate Fragment type you need to visit */
+        public override void ExplicitVisit(TSqlScript node)
+        {
+            this.ErroneousFragments.Add(node);
+        }
+    }
+}
+<#
+    }
+#>
+<#+
+
+  public List<string> GetFileNames()
+  {
+
+    var names = new List<string>();
+
+    var assembly = typeof(RuleIdentities).Assembly;
+    var type = assembly.GetType("Carnage.Core.Rules.Data.RuleIdentities");   
+    var members = type.GetMembers(BindingFlags.Public | BindingFlags.Static | BindingFlags.Default | BindingFlags.Instance);
+
+    foreach (var member in members)
+    {
+        if (member.MemberType == MemberTypes.Field)
+        {
+                names.Add(member.Name);
+        }
+    }
+    return names;
+  }
+#>
+
+
+
+
+

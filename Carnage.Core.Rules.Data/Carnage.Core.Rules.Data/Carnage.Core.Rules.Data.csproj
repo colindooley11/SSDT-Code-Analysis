@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4925A288-E4BE-4901-816E-BA46B7F3DC60}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Carnage.Core.Rules.Data</RootNamespace>
+    <AssemblyName>Carnage.Core.Rules.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>..\Asos.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Tools.Schema.Sql, Version=10.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\Microsoft.Data.Tools.Schema.Sql.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Tools.Utilities, Version=10.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\Microsoft.Data.Tools.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Dac, Version=10.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\Microsoft.SqlServer.Dac.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Dac.Extensions, Version=10.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\Microsoft.SqlServer.Dac.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.TransactSql.ScriptDom, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\Microsoft.SqlServer.TransactSql.ScriptDom.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfoCommon.cs">
+      <Link>AssemblyInfoCommon.cs</Link>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="RuleIdentities.cs" />
+    <Compile Include="Rules\AvoidUsingSetOptions.cs" />
+    <Compile Include="Rules\AvoidWaitForDelayRule.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Attributes\LocalisedExportCodeAnalysisRuleAttribute.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RuleResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rules\CarnageSqlCodeAnalysisRule.cs" />
+    <Compile Include="Rules\ColumnCollationRule.cs" />
+    <Compile Include="Rules\ColumnNamesMustBeSpecifiedRule.cs" />
+    <Compile Include="Rules\AvoidUsingGlobalVariableForIdentityRule.cs" />
+    <Compile Include="Rules\BalancedNumberSetOptionsNoCountRule.cs" />
+    <Compile Include="Rules\DataTypesRule.cs" />
+    <Compile Include="Rules\UsingFullTextIndexRule.cs" />
+    <Compile Include="Rules\DoNotUseHintsRule.cs" />
+    <Compile Include="Rules\ReturnStatementPresentRule.cs" />
+    <Compile Include="Rules\DdlRule.cs" />
+    <Compile Include="Rules\HeaderRule.cs" />
+    <Compile Include="Rules\DynamicSqlRule.cs" />
+    <Compile Include="Rules\UsingIndexedViewsRule.cs" />
+    <Compile Include="Rules\DoNotUseNumbersInOrderBy.cs" />
+    <Compile Include="Rules\DoNotUseSelectStar.cs" />
+    <Compile Include="Visitors\AvoidUsingGlobalVariableForIdentityVisitor.cs" />
+    <Compile Include="Visitors\ColumnCollationVisitor.cs" />
+    <Compile Include="Visitors\CreateProcedureReturnVisitor.cs" />
+    <Compile Include="Visitors\DataTypesVisitor.cs" />
+    <Compile Include="Visitors\DeleteStatementVisitor.cs" />
+    <Compile Include="Visitors\HintVisitor.cs" />
+    <Compile Include="Visitors\CreateProcedureVisitor.cs" />
+    <Compile Include="Visitors\DdlVisitor.cs" />
+    <Compile Include="Visitors\InsertStatementVisitor.cs" />
+    <Compile Include="Visitors\MergeStatmentVisitor.cs" />
+    <Compile Include="Visitors\ReturnStatementPresentVisitor.cs" />
+    <Compile Include="Visitors\SelectStatmentVisitor.cs" />
+    <Compile Include="Visitors\StoredProcedureVisitor.cs" />
+    <Compile Include="Visitors\UpdateStatementVisitor.cs" />
+    <Compile Include="Visitors\UsingFullTextIndexVisitor.cs" />
+    <Compile Include="Visitors\DynamicSqlVisitor.cs" />
+    <Compile Include="Visitors\SetOptionsVisitor.cs" />
+    <Compile Include="Visitors\BalancedNumberSetOptionsNoCountVisitor.cs" />
+    <Compile Include="Visitors\UsingIndexedViewsVisitor.cs" />
+    <Compile Include="Rules\PrimaryKeyRule.cs" />
+    <Compile Include="Visitors\PrimaryKeyVisitor.cs" />
+    <Compile Include="Rules\KeywordsUppercaseRule.cs" />
+    <Compile Include="Rules\InvalidTypesRule.cs" />
+    <Compile Include="Rules\SchemaPrefixRule.cs" />
+    <Compile Include="Rules\TableAliasRule.cs" />
+    <Compile Include="Visitors\ColumnNameVisitor.cs" />
+    <Compile Include="Visitors\OrderByVisitor.cs" />
+    <Compile Include="Visitors\InvalidTypesVisitor.cs" />
+    <Compile Include="Visitors\SelectStarVisitor.cs" />
+    <Compile Include="Visitors\TableAliasVisitor.cs" />
+    <Compile Include="Visitors\SchemaVisitor.cs" />
+    <Compile Include="Visitors\WaitForDelayVisitor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RuleResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RuleResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\FxCopCustomDictionary.xml">
+      <Link>FxCopCustomDictionary.xml</Link>
+      <SubType>Designer</SubType>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CarnageRulesDataCert.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!--<Import Project="..\Scripts\Build.Project.targets" />-->
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

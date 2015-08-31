@@ -1,0 +1,9 @@
+Problem description: SELECT * statement was found, use column names instead.
+FullID: Carnage.Core.Data.Rules.C1001
+Severity: Warning
+Model element: dbo.ProcContainingSelectAllCarnage
+Script file: ProcContainingSelectAll.sql
+Start line: 4
+Start column: 19
+========end of problem========
+

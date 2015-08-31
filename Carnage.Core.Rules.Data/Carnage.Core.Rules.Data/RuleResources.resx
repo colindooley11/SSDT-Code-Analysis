@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AvoidUsingGlobalVariableForIdentity_ProblemDescription" xml:space="preserve">
+    <value>Use SCOPE_IDENTITY() instead of @@IDENTITY global variable to ensure that an accurate IDENTITY value is captured.</value>
+  </data>
+  <data name="AvoidUsingGlobalVariableForIdentity_RuleName" xml:space="preserve">
+    <value>Avoid using the @@IDENTITY variable. </value>
+  </data>
+  <data name="AvoidUsingSetOptions_ProblemDescription" xml:space="preserve">
+    <value>Please speak with a DB Engineer or Administrator regarding the use of SET OPTIONS as the automated deployment mechanism will auto set these. Generally SET NOCOUNT ON will be the only one you need to specify.</value>
+  </data>
+  <data name="AvoidUsingSetOptions_RuleName" xml:space="preserve">
+    <value>Avoid using SET OPTIONs other than SET NOCOUNT ON|OFF.</value>
+  </data>
+  <data name="AvoidWaitForDelay_ProblemDescription" xml:space="preserve">
+    <value>Avoid using the WAITFOR DELAY statement. Transactions should not normally be explicitly blocked.</value>
+  </data>
+  <data name="AvoidWaitForDelay_RuleName" xml:space="preserve">
+    <value>Avoid using the WAITFOR Delay statements in stored procedures, functions and triggers. </value>
+  </data>
+  <data name="BalancedNumberSetOptionsNoCount_ProblemDescription" xml:space="preserve">
+    <value>Use SET NOCOUNT ON at the beginning of any SQL batches, stored procedures and triggers that include INSERT, UPDATE, DELETE and SELECT statements. Use SET NOCOUNT OFF at the end of the batch.</value>
+  </data>
+  <data name="BalancedNumberSetOptionsNoCount_RuleName" xml:space="preserve">
+    <value>Ensure balanced SET NOCOUNT statements. </value>
+  </data>
+  <data name="CannotCreateResourceManager" xml:space="preserve">
+    <value>Can't create ResourceManager for {0} from {1}.</value>
+  </data>
+  <data name="CategorySamples" xml:space="preserve">
+    <value>SamplesCategory</value>
+  </data>
+  <data name="CollationProblemDescription" xml:space="preserve">
+    <value>Only use Unicode characters if your database is going to store non-western Latin characters, but remember we are an International company and you may need to check with regards of possible future use of non-Latin alphabets such as Cyrillic’s (Russian), Greek or Eastern Alphabets.</value>
+  </data>
+  <data name="CollationRuleName" xml:space="preserve">
+    <value>Consider usage of Unicode characters. </value>
+  </data>
+  <data name="ColumnNameMustBeSpecified_ProblemDescription" xml:space="preserve">
+    <value>Column names are not supplied for the insert statement.</value>
+  </data>
+  <data name="ColumnNameMustBeSpecified_RuleName" xml:space="preserve">
+    <value>Column names must be supplied for inserts.</value>
+  </data>
+  <data name="DataTypesMustBeInLowercaseDescription" xml:space="preserve">
+    <value>Data types must be lowercased.</value>
+  </data>
+  <data name="DataTypesMustBeInLowercaseName" xml:space="preserve">
+    <value>Data types must be lowercase.</value>
+  </data>
+  <data name="DoNotUseHints_ProblemDescription" xml:space="preserve">
+    <value>Table and Query hints are not to be used without the explicit permission of a DB Engineer or Administrator.</value>
+  </data>
+  <data name="DoNotUseHints_RuleName" xml:space="preserve">
+    <value>Avoid using Table and Query Hints. </value>
+  </data>
+  <data name="DoNotUseNumbersInOrderBy_ProblemDescription" xml:space="preserve">
+    <value>Column numbers/Ordinals found.</value>
+  </data>
+  <data name="DoNotUseNumbersInOrderBy_RuleName" xml:space="preserve">
+    <value>ORDER BY should only use column names, not numbers.</value>
+  </data>
+  <data name="DynamicRuleName" xml:space="preserve">
+    <value>Avoid the use of Dynamic SQL.</value>
+  </data>
+  <data name="DynamicSqlProblemDescription" xml:space="preserve">
+    <value>Avoid the use of Dynamic SQL.</value>
+  </data>
+  <data name="Header_ProblemDescription" xml:space="preserve">
+    <value>Please ensure the header is added to the top of the stored procedure or function. SQL scripts without the header will be rejected immediately. </value>
+  </data>
+  <data name="Header_RuleName" xml:space="preserve">
+    <value>Ensure the [Company] standard header is included for stored procedures and functions. </value>
+  </data>
+  <data name="InvalidTypesProblemDescription" xml:space="preserve">
+    <value>Avoid the use of text, ntext and image data-types; these have been deprecated since SQL 2005. Use char, varchar, nvarchar and varbinary instead.</value>
+  </data>
+  <data name="InvalidTypesRuleName" xml:space="preserve">
+    <value>Avoid the use of TEXT, NTEXT and IMAGE data types.</value>
+  </data>
+  <data name="KeywordsMustBeInUppercaseDescription" xml:space="preserve">
+    <value>SQL keywords must be uppercased, for consistency and readability. </value>
+  </data>
+  <data name="KeywordsMustBeInUppercaseName" xml:space="preserve">
+    <value>Ensure keywords are uppercased.</value>
+  </data>
+  <data name="PrimaryKeyProblemDescription" xml:space="preserve">
+    <value>It is common practice to use an IDENTITY column as a Primary Key.</value>
+  </data>
+  <data name="PrimaryKeyRuleName" xml:space="preserve">
+    <value>Consider using IDENTITY on the primary key column. </value>
+  </data>
+  <data name="ReturnStatementPresentRule_ProblemDescription" xml:space="preserve">
+    <value>The RETURN statement is meant for returning the execution status, and not data. If you wish to return data (particularly a scalar value), use the OUTPUT parameter.</value>
+  </data>
+  <data name="ReturnStatementPresentRule_RuleName" xml:space="preserve">
+    <value>Ensure that RETURN is used to return status and not data. </value>
+  </data>
+  <data name="SchemaPrefixProblemDescription" xml:space="preserve">
+    <value>Please ensure you use schema prefix when referencing objects.</value>
+  </data>
+  <data name="SchemaPrefixRuleName" xml:space="preserve">
+    <value>Ensure that the schema prefix is used when referencing objects.</value>
+  </data>
+  <data name="SelectStarExpression_ProblemDescription" xml:space="preserve">
+    <value>SELECT * statement was found, use column names instead.</value>
+  </data>
+  <data name="SelectStarExpression_RuleName" xml:space="preserve">
+    <value>Please ensure that all column names are specified in SELECT statements.</value>
+  </data>
+  <data name="TableAliasProblemDescription" xml:space="preserve">
+    <value>Avoid the use of aliases unless the table is referenced multiple times. If aliases are to be used select a meaningful name and always specify the AS keyword</value>
+    <comment>Under contention</comment>
+  </data>
+  <data name="TableAliasRuleName" xml:space="preserve">
+    <value>Avoid the use of aliases.</value>
+    <comment>Under contention</comment>
+  </data>
+  <data name="UseOfDDLProblemDescription" xml:space="preserve">
+    <value>Do not use Data Definition Language (DDL) within stored procedures. If creating a temporary table consider use of DECLARE instead. </value>
+  </data>
+  <data name="UseOfDDLRuleName" xml:space="preserve">
+    <value>Avoid the use of Data Definition Language (DDL) in stored procedures.</value>
+  </data>
+  <data name="UsingFullTextIndex_ProblemDescription" xml:space="preserve">
+    <value>Full Text indexes may be supported depending on intended usage. Speak with a Database Engineer on how best to employ them.</value>
+  </data>
+  <data name="UsingFullTextIndex_RuleName" xml:space="preserve">
+    <value>Avoid using full text indexes. </value>
+  </data>
+  <data name="UsingIndexedViews_ProblemDescription" xml:space="preserve">
+    <value>Indexed Views are supported provided all objects within the database have been correctly compiled. Speak with a Database Engineer on how best to employ them.</value>
+  </data>
+  <data name="UsingIndexedViews_RuleName" xml:space="preserve">
+    <value>Avoid using indexed views. </value>
+  </data>
+</root>

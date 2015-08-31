@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A387CB5-7C77-4439-932E-FB2BFAE810C2}"
+	ProjectSection(SolutionItems) = preProject
+		Carnage.ruleset = Carnage.ruleset
+		Carnage.Tests.ruleset = Carnage.Tests.ruleset
+		AssemblyInfoCommon.cs = AssemblyInfoCommon.cs
+		FxCopCustomDictionary.xml = FxCopCustomDictionary.xml
+		Settings.StyleCop = Settings.StyleCop
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{438D0EDF-6D70-4640-8E8D-EC4F679772D3}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\Build.Project.targets = Scripts\Build.Project.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carnage.Core.Rules.Data", "Carnage.Core.Rules.Data\Carnage.Core.Rules.Data.csproj", "{4925A288-E4BE-4901-816E-BA46B7F3DC60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carnage.Core.Rules.Data.UnitTests", "Carnage.Core.Rules.Data.UnitTests\Carnage.Core.Rules.Data.UnitTests.csproj", "{080DF32B-8C3F-4C90-8412-3C8EA2F5F90D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.kingsway.Carnage.com:8080/tfs/asos
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Carnage.Core.Rules.Data\\Carnage.Core.Rules.Data.csproj
+		SccProjectName1 = Carnage.Core.Rules.Data
+		SccLocalPath1 = Carnage.Core.Rules.Data
+		SccProjectUniqueName2 = Carnage.Core.Rules.Data.UnitTests\\Carnage.Core.Rules.Data.UnitTests.csproj
+		SccProjectName2 = Carnage.Core.Rules.Data.UnitTests
+		SccLocalPath2 = Carnage.Core.Rules.Data.UnitTests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4925A288-E4BE-4901-816E-BA46B7F3DC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4925A288-E4BE-4901-816E-BA46B7F3DC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4925A288-E4BE-4901-816E-BA46B7F3DC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4925A288-E4BE-4901-816E-BA46B7F3DC60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080DF32B-8C3F-4C90-8412-3C8EA2F5F90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080DF32B-8C3F-4C90-8412-3C8EA2F5F90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080DF32B-8C3F-4C90-8412-3C8EA2F5F90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080DF32B-8C3F-4C90-8412-3C8EA2F5F90D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

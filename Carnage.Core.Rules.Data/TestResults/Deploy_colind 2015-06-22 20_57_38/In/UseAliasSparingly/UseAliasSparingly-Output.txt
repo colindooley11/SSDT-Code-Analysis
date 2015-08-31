@@ -1,0 +1,9 @@
+Problem description: Avoid the use of aliases unless the table is referenced multiple times. If aliases are to be used select a meaningful name and always specify the AS keyword
+FullID: Asos.Core.Data.Rules.AR1003
+Severity: Warning
+Model element: dbo.ProcContainingAlias
+Script file: ProcContainingAlias.sql
+Start line: 4
+Start column: 26
+========end of problem========
+

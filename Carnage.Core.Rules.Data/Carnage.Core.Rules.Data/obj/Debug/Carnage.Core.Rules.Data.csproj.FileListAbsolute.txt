@@ -1,0 +1,13 @@
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\obj\Debug\Carnage.Core.Rules.Data.csprojResolveAssemblyReference.cache
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\obj\Debug\Carnage.Core.Rules.Data.csproj.GenerateResource.Cache
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\bin\Debug\Microsoft.Data.Tools.Schema.Sql.dll
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\bin\Debug\Microsoft.Data.Tools.Utilities.dll
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\bin\Debug\Microsoft.SqlServer.Dac.dll
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\bin\Debug\Microsoft.SqlServer.Dac.Extensions.dll
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\bin\Debug\Microsoft.SqlServer.Dac.xml
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\bin\Debug\Microsoft.SqlServer.Dac.Extensions.xml
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\obj\Debug\Carnage.Core.Rules.Data.RuleResources.resources
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\bin\Debug\Carnage.Core.Rules.Data.dll
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\bin\Debug\Carnage.Core.Rules.Data.pdb
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\obj\Debug\Carnage.Core.Rules.Data.dll
+C:\Carnage.Core.Rules.Data\Carnage.Core.Rules.Data\obj\Debug\Carnage.Core.Rules.Data.pdb

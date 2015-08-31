@@ -1,0 +1,27 @@
+Problem description: SQL keywords must be uppercased, for consistency and readability. 
+FullID: Carnage.Core.Data.Rules.C1002
+Severity: Error
+Model element: dbo.ProcContainingLowerCaseSelect
+Script file: Procs.sql
+Start line: 4
+Start column: 12
+========end of problem========
+
+Problem description: SQL keywords must be uppercased, for consistency and readability. 
+FullID: Carnage.Core.Data.Rules.C1002
+Severity: Error
+Model element: dbo.ProcContainingLowerCaseProc
+Script file: Procs.sql
+Start line: 8
+Start column: 8
+========end of problem========
+
+Problem description: SQL keywords must be uppercased, for consistency and readability. 
+FullID: Carnage.Core.Data.Rules.C1002
+Severity: Error
+Model element: dbo.ProcContainingLowerCaseProc
+Script file: Procs.sql
+Start line: 11
+Start column: 12
+========end of problem========
+
